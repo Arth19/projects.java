@@ -1,3 +1,5 @@
+package com.firstApp;
+
 public class Cliente extends Pessoa {
 
     private int qtdFilmes;
