@@ -8,6 +8,7 @@ public class Pessoa {
     protected int cpf;
     protected String dataAniv;
     protected Cliente.Endereço endereco;
+    private String teste;
 
     public String getNome() {
         return nome;
