@@ -1,3 +1,5 @@
+package com.firstApp;
+
 import java.util.Objects;
 
 public class Pessoa {
@@ -5,7 +7,7 @@ public class Pessoa {
     protected int idade;
     protected int cpf;
     protected String dataAniv;
-    protected Endereço endereco;
+    protected Cliente.Endereço endereco;
 
     public String getNome() {
         return nome;
@@ -39,7 +41,7 @@ public class Pessoa {
         this.dataAniv = dataAniv;
     }
 
-    public Endereço getEndereco() {
+    public Cliente.Endereço getEndereco() {
         return endereco;
     }
 
@@ -67,7 +69,7 @@ public class Pessoa {
 
     @Override
     public String toString() {
-        return "Pessoa{" +
+        return "com.firstApp.Pessoa{" +
                 "nome='" + nome + '\'' +
                 ", idade=" + idade +
                 ", cpf=" + cpf +
