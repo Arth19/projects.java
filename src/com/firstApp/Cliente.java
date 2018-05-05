@@ -4,7 +4,7 @@ public class Cliente extends Pessoa {
 
     private int qtdFilmes;
     private Filme filme;
-    private float credito;
+    private int credito;
 
     public Cliente(String nome, int idade, int cpf) {
         this.nome = nome;
@@ -32,10 +32,12 @@ public class Cliente extends Pessoa {
         return credito;
     }
 
-    public void setCredito(float credito) {
+    public void setCredito(int credito) {
         this.credito = credito;
     }
-
+    public void compraCredito(double dinheiro){
+        this.credito += dinheiro*(dinheiro/4);
+    }
     public static class Endereço {
        private String rua;
        private String bairro;
@@ -82,5 +84,7 @@ public class Cliente extends Pessoa {
        public void setNumero(int numero) {
            this.numero = numero;
        }
+
+
    }
 }
